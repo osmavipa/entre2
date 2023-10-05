@@ -1,0 +1,150 @@
+.principal{
+    width: inherit;
+    height: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card{
+    background-color: rgba(113, 170, 220, 0.8);
+    width: 20vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 200px;
+    justify-content: space-evenly;
+
+}
+
+.card__container-header{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.card__tittle{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.card__city-country{
+    font-size: 1.5rem;
+}
+
+.card__container-main{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main__info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    gap: 0.5rem;
+}
+
+.info__text-bold{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.main__info{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-info{
+    list-style: none;
+}
+
+.info__item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.info__item > span{
+    font-weight: 800;
+}
+
+.main__image{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_img{
+    width: 90%;
+}
+
+
+
+.card__container-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.button-change{
+    width: 70%;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(50, 182, 66);
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-shadow: 5px 10px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: all .5s ease;
+}
+
+.button-change:hover{
+    background-color: rgb(185, 38, 38);
+}
+
+
+@media (max-width: 1000px){
+    .card{
+        width: 75vw;
+    }
+    .card__tittle{
+        font-size: 2rem;
+    }
+    .main__info{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 425px){
+    .card__container-main{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .card{
+        height: 70vh;
+    }
+
+    
+}
+
+
+
